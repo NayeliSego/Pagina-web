@@ -9,6 +9,5 @@
               echo "<h2>los intereses personales son:</h2>";
         echo "intereses: " . $nombre . "<br/>";
         }
-
        
         ?>
