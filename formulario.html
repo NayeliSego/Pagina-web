@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formulario
+        </title>
+    </head>
+
+    <body>
+
+        <!---Formulario--->
+        <form action="formu.php" method="get">
+            <p>A: <input type = "number" name="a"/></p>
+
+            <p>B: <input  name="b"/></p>
+
+<P>SEXO</P>
+
+            <input type="radio" name="sexo" value="H"/> Varón<br/>
+            <input type="radio" name="sexo" value="M"/> Mujer<br/>
+            <input type="radio" name="sexo" value="O"/> otro<br/>
+
+
+<div class="container">
+    <h3 class="mt-5">intereses</h3>
+        <!-- Contenido -->
+        
+  <form action="index.php" method="post">
+  
+  <label class="heading">Seleccione su lenguaje favorito:</label>
+  <div class="checkbox">
+    <label><input type="checkbox" name="check1" value="10">artes</label>
+  </div>
+  <div class="checkbox"> 
+    <label><input type="checkbox" name="check2" value="8">musica</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="check3" value="7">arquitectura</label>
+  </div> 
+  <div class="checkbox">
+    <label><input type="checkbox" name="check4" value="11">astronomia</label>
+  </div> 
+  <div class="checkbox">
+    <label><input type="checkbox" name="check5" value="10">danza</label>
+  </div> 
+  <div class="checkbox">
+    <label><input type="checkbox" name="check6" value="50">oratoria</label>
+  </div> 
+  
+   
+  
+  <button type="submit" class="btn btn-primary" name="enviar">Enviar Información</button>
+  <!----- Including PHP Script ----->
+  <?php include 'checkbox_proceso.php';?>
+  </form>
+        <!-- Fin Contenido --> 
+      </div>
+    </div>
+    <!-- Fin row --> 
+
+        </form>
+    </body>
+</html>
